@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: mines-bot
+    env: python
+    buildCommand: ""
+    startCommand: python main.py
+    runtime: python
+    region: oregon
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
